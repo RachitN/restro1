@@ -3,6 +3,9 @@ session_start();
    if(!isset($_SESSION['login_user'])){
       header("location:login.php");
    } 
+else
+{$_SESSION['login_user']='add.php';
+}
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
 include("config.php");

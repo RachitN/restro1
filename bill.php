@@ -3,6 +3,9 @@ session_start();
    if(!isset($_SESSION['login_user'])){
       header("location:login.php");
    }
+else
+{$_SESSION['login_user']='bill.php';
+}
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
 include("config.php");
@@ -32,7 +35,7 @@ background-size:100%;
 }</style>
 <title> bill </title></head>
 <body>
-<P><A HREF="welcome.html">HOME</A>
+<P><A HREF="welcome.php">HOME</A>
 <BR><BR><BR><BR><BR><BR>
 <font color="red">
 <B><i><h1 style="text-align:center">BILL </H1></B></I></font>

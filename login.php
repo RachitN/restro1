@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+   if(isset($_SESSION['login_user'])){
+      header("location:".$_SESSION['login_user']);
+   }
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
 include("config.php");

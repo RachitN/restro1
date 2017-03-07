@@ -4,6 +4,9 @@
    if(!isset($_SESSION['login_user'])){
       header("location:login.php");
    }
+else
+{$_SESSION['login_user']='welcome.php';
+}
 ?>
 <html>
 <head><style type"text/css">
