@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $u=$_POST['userid'];
 $p=$_POST['pass'];
 $user_name="bc735e9a1d9622";
