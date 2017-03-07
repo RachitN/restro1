@@ -9,10 +9,11 @@ include("config.php");
 $query="SELECT * FROM login where username ='$u' and password='$p' ";
 $result=mysqli_query($c,$query);
 $num=mysqli_num_rows($result);
+ $w='welcome.php';
 if($num==1)
 {        
 $_SESSION['login_user'] = $u;
-header("Location:welcome.php");
+header("Location:".$w);
 }
 else {$error="wrong details";
      echo"$error";}
