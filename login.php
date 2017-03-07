@@ -12,7 +12,7 @@ $num=mysqli_num_rows($result);
 if($num==1)
 {        
 $_SESSION['login_user'] = $u;
-header("location:welcome.php");
+header("Location:welcome.php");
 }
 else {$error="wrong details";
      echo"$error";}
